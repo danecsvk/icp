@@ -4,31 +4,33 @@
 
 <head>
     <meta charset="utf-8">
-
     <title>Cocoroco Fun Park</title>
     <meta name="description" content="Lunapark website.">
     <meta name="author" content="A-Team">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="public/css/styles.css">
 </head>
 
 <body>
     <div class="container-fluid main-page" style="background-color:aqua;">
 
         <div class="container header " style="background-color:rgb(238, 255, 0);">
+            <!-- header bez menu -->
             <div class="row logo align-middle">
-
+                <!-- logo -->
                 <div class="col-xs-10 col-sm-10 col-lg-6 form-inline ">
                     <a href="index.html" style="margin:3px;"><img class="img-fluid" src="public/img/logo.png" alt="Logo"></a>
                 </div>
 
+                <!-- search & lang -->
                 <div class="form-inline search-lang col-xs-10 col-sm-10 col-lg-4">
+                    <!-- search -->
                     <form class="col-8 form-inline">
                         <input class="form-control col-8" type="search" placeholder="Search" aria-label="Search">
                         <button class="btn btn-link col-2 search-button" type="submit"><img src="public/img/search.png" alt="Search Image" height="20px"></button>
                     </form>
-
+                    <!-- lang -->
                     <div class="col-2 form-inline">
                         <div class="dropdown show">
                             <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -42,47 +44,64 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
+            <!-- header menu 
             <div class="row header-menu">
-                <div class="col">
+                <div class="col nav-item">
                     Home
                 </div>
-                <div class="col">
+                <div class="col nav-item">
                     Attractions
                 </div>
-                <div class="col">
+                <div class="col nav-item">
                     Tickets
                 </div>
-                <div class="col">
+                <div class="col nav-item">
                     Map
                 </div>
+            </div>-->
+            <br>
+            <div class="card-header header-menu">
+                <ul class="nav  nav-pills">
+                    <li class="nav-item col">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item col">
+                        <a class="nav-link" href="#">Attractions</a>
+                    </li>
+                    <li class="nav-item col">
+                        <a class="nav-link" href="#">Tickets</a>
+                    </li>
+                    <li class="nav-item col">
+                        <a class="nav-link" href="#">Map</a>
+                    </li>
+                </ul>
+            </div>
+
+
+            <div class="container events" style="background-color:pink">
+                <h1>Nadpis</h1>
+            </div>
+
+            <div class="container infopanel" style="background-color:orange">
+                <h1>Nadpis</h1>
+            </div>
+
+            <div class="container footer" style="background-color:rgb(141, 38, 107)">
+                <h1>Nadpis</h1>
+            </div>
+
+            <div class="container main" style="background-color:rgb(0, 238, 52)">
+                <h1>Nadpis</h1>
             </div>
         </div>
 
-        <div class="container events" style="background-color:pink">
-            <h1>Nadpis</h1>
-        </div>
-
-        <div class="container infopanel" style="background-color:orange">
-            <h1>Nadpis</h1>
-        </div>
-
-        <div class="container footer" style="background-color:rgb(141, 38, 107)">
-            <h1>Nadpis</h1>
-        </div>
-
-        <div class="container main" style="background-color:rgb(0, 238, 52)">
-            <h1>Nadpis</h1>
-        </div>
-    </div>
 
 
-
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 </body>
 
 </html>
