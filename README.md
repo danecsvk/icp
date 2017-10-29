@@ -1,2 +1,2 @@
 # icp
-Veľkoprojekt na IČP, bootstrap, CSS, HTML, JS a iné píčoviny.
+Veľkoprojekt na IČP, bootstrap, CSS, HTML, JS a iné haluze.
