@@ -55,6 +55,7 @@
 .menucko-div {
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
+    background-color: #007186;
 }
 
 .quick-buy-btn {
@@ -73,6 +74,7 @@
 .quick-buy-div {
     border-radius: 15px;
     border-color: black;
+    background-color: #73E9FF;
 }
 
 .quick-buy-btn {
@@ -89,14 +91,6 @@
     padding: 15px 0px 15px 0px;
     float: right;
     background-color: lightgray;
-}
-
-
-/* navigation setting */
-
-.navbar {
-    padding: 15px 0px 0px 0px;
-    margin-bottom: 0px;
 }
 
 
@@ -174,6 +168,34 @@
     margin: 0 auto;
 }
 
+.nav-list-item {
+    cursor: pointer;
+    color: white;
+    font-size: 225%;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.nav-list-item:hover {
+    color: #005767;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.nav-list-item.isActive {
+    color: #005767;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.navbar {
+    margin: 0;
+}
+
+.header-div {
+    padding: 15px;
+}
+
 
 /* media queries */
 
@@ -214,20 +236,36 @@ img {
 }
 
 .language-switch {
-    background-color: rgb(100, 100, 100);
+    background-color: white;
     border-radius: 5px;
     width: 60%;
-    color: white;
+    color: #005767;
 }
 
 .search-input {
-    width: 50%
+    width: 50%;
+    border-radius: 15px;
+    padding-left: 5px;
+    color: #005767;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .language-text {
-    color: white;
+    color: #005767;
 }
 
 a:active {
-    color: white;
+    color: #005767;
+}
+
+.btn {
+    color: #005767;
+    background-color: white;
+}
+
+.btn.focus,
+.btn:focus,
+.btn:hover {
+    color: #005767;
+    background-color: white;
 }

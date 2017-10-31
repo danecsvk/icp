@@ -15,7 +15,7 @@
 <body>
     <section id="header">
         <div class="container">
-            <div class="row">
+            <div class="row header-div">
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
                     <a href="index.html"><img class="img-responsive header-img" src="public/img/logo-text.png" alt="Logo"></a>
                 </div>
@@ -27,7 +27,7 @@
 
                     <div class="dropdown show language-switch">
                         <a class="btn btn-secondary dropdown-toggle language-text" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <img src="public/img/us-flag.png" alt="US Flag" height="20px">En<img src="public/img/arrow.png" alt="Arrow" height="20px">
+                            <img src="public/img/us-flag.png" alt="US Flag" height="20px"> En <img src="public/img/arrow.png" alt="Arrow" height="20px">
                         </a>
 
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
@@ -43,21 +43,21 @@
     </section>
 
     <section id="navi">
-        <div class="container">
+        <div class="container menucko">
             <div class="row">
                 <nav class="navbar navbar-default menucko-div">
                     <div class="container-fluid">
-                        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 nav-list-item">
-                            <a href="#">Home</a>
+                        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 nav-list-item isActive" onclick="window.location='index.html';">
+                            Home
                         </div>
-                        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 nav-list-item">
-                            <a href="#">Attraction</a>
+                        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 nav-list-item" onclick="window.location='attractions.html';">
+                            Attractions
                         </div>
-                        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 nav-list-item">
-                            <a href="#">Tickets</a>
+                        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 nav-list-item" onclick="window.location='tickets.html';">
+                            Tickets
                         </div>
-                        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 nav-list-item">
-                            <a href="#">Map</a>
+                        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 nav-list-item" onclick="window.location='map.html';">
+                            Map
                         </div>
                     </div>
                 </nav>
