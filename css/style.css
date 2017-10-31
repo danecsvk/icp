@@ -217,8 +217,17 @@ img {
     background-color: rgb(100, 100, 100);
     border-radius: 5px;
     width: 60%;
+    color: white;
 }
 
 .search-input {
     width: 50%
+}
+
+.language-text {
+    color: white;
+}
+
+a:active {
+    color: white;
 }
