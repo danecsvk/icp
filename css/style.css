@@ -98,7 +98,7 @@
 
 .attraction-item-box {
     margin-top: 20px;
-    background-color: #73E9FF;
+    background-color: white;
     padding: 10px 0px 15px 0px;
 }
 
@@ -107,14 +107,14 @@
 }
 
 .social-icon-box {
-    margin-top: 20px;
+    margin-top: 5px;
     overflow: hidden;
     padding: 0;
 }
 
 .social-icon {
     width: 60%;
-    padding: 5px 0px 5px 0px;
+    padding: 0px 0px 0px 0px;
 }
 
 .attraction-rating-box {
@@ -146,6 +146,28 @@ body {
     padding: 4px;
 }
 
+.show-more {
+    text-align: center;
+}
+
+.notsogood-attraction {
+    width: 50%;
+    background-color: #005767;
+    color: white;
+    padding: 4px;
+}
+
+a {
+    color: inherit;
+}
+
+.perfect-attraction {
+    width: 100%;
+    background-color: #005767;
+    color: white;
+    padding: 4px;
+}
+
 
 /* side bar - right */
 
@@ -160,6 +182,8 @@ body {
     margin-top: 2px;
     background-color: #73E9FF;
     border-radius: 15px;
+    border-style: solid;
+    border-color: inherit;
 }
 
 .sidebar-left-icon {
@@ -202,6 +226,11 @@ body {
     border-radius: 15px;
 }
 
+.attraction-list-box {
+    background-color: #73E9FF;
+    border-radius: 15px;
+}
+
 .navbar {
     margin: 0;
 }
@@ -236,6 +265,9 @@ body {
 
 @media(max-width: 1200px) {
     #quick-buy {
+        display: none;
+    }
+    .social-icon-box {
         display: none;
     }
 }
