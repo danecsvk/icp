@@ -144,11 +144,14 @@
 /* side bar - right */
 
 .sidebar-right {
-    margin-top: 20px;
+    margin-top: 2px;
+    background-color: #007186;
+    border-radius: 15px;
+    padding: 5px;
 }
 
 .sidebar-left {
-    margin-top: 20px;
+    margin-top: 2px;
     background-color: lightgray;
 }
 
@@ -161,6 +164,9 @@
 .sidebar-item {
     margin-bottom: 10px;
     background-color: white;
+    border-radius: 15px;
+    border-style: solid;
+    padding: 5px;
 }
 
 .sidebar-icon {
