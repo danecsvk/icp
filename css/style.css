@@ -8,7 +8,7 @@
 }
 
 #content>.container>.row {
-    margin-top: 30px;
+    margin-top: 5px;
 }
 
 .header-img {
@@ -74,6 +74,7 @@
 .quick-buy-div {
     border-radius: 15px;
     border-color: black;
+    border-style: solid;
     background-color: #73E9FF;
 }
 
@@ -90,7 +91,6 @@
 .float-to-right {
     padding: 15px 0px 15px 0px;
     float: right;
-    background-color: lightgray;
 }
 
 
@@ -98,7 +98,7 @@
 
 .attraction-item-box {
     margin-top: 20px;
-    background-color: lightgray;
+    background-color: #73E9FF;
     padding: 10px 0px 15px 0px;
 }
 
@@ -135,9 +135,15 @@
     margin: 0 auto;
 }
 
+body {
+    background-color: #A6F1FF;
+}
+
 .brutal-attraction {
     width: 90%;
-    background-color: yellow;
+    background-color: #005767;
+    color: white;
+    padding: 4px;
 }
 
 
@@ -152,13 +158,15 @@
 
 .sidebar-left {
     margin-top: 2px;
-    background-color: lightgray;
+    background-color: #73E9FF;
+    border-radius: 15px;
 }
 
 .sidebar-left-icon {
-    width: 50%;
+    width: 100%;
     margin: 0 auto;
     margin-bottom: 10px;
+    border-radius: 15px;
 }
 
 .sidebar-item {
