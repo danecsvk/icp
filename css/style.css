@@ -4,7 +4,7 @@
 }
 
 #header>.container>.row {
-    background-color: red;
+    background-color: #73E9FF;
 }
 
 #content>.container>.row {
@@ -41,6 +41,18 @@
 .quick-buy-field {
     margin-right: 30px;
     margin-top: 5px;
+    width: 50%;
+    height: 50%;
+}
+
+.form-inline .form-control {
+    width: 30%;
+}
+
+.input-text {
+    text-align: center;
+    vertical-align: middle;
+    margin-left: 20px;
 }
 
 .float-to-right {
