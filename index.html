@@ -1,135 +1,246 @@
-<!doctype html>
-
-<html lang="en">
-
+<!DOCTYPE html>
+<html>
 <head>
-    <meta charset="utf-8">
-    <title>Cocoroco Fun Park</title>
-    <meta name="description" content="Lunapark website.">
-    <meta name="author" content="A-Team">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-    <link rel="stylesheet" href="public/css/styles.css">
+	<title>RocoCoco</title>
+
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-    <div class="container-fluid main-page" style="background-color:aqua;">
 
-        <div class="container header " style="background-color:rgb(238, 255, 0);">
-            <!-- header bez menu -->
-            <div class="row logo align-middle">
-                <!-- logo -->
-                <div class="col-xs-10 col-sm-10 col-lg-6 form-inline ">
-                    <a href="index.html" style="margin:3px;"><img class="img-fluid" src="public/img/logo.png" alt="Logo"></a>
-                </div>
+<section id="header">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+				<img class="img-responsive header-img" src="img/header.jpg">
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 vert-center">
+				<input type="text" value="input key words">
+				<button type="button" class="btn btn-light">Search</button>
+			</div>
+			<div class="col-xs-6 col-sm-6 col-md-6 col-lg-1 vert-center">
+				<h5>Kosik</h5>
+			</div>
+			<div class="col-xs-6 col-sm-6 col-md-6 col-lg-1 vert-center">
+				<h5>Jazyky</h5>
+			</div>
+		</div>
+	</div>
+</section>
 
-                <!-- search & lang -->
-                <div class="form-inline search-lang col-xs-10 col-sm-10 col-lg-4">
-                    <!-- search -->
-                    <form class="col-8 form-inline">
-                        <input class="form-control col-8" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-link col-2 search-button" type="submit"><img src="public/img/search.png" alt="Search Image" height="20px"></button>
-                    </form>
-                    <!-- lang -->
-                    <div class="col-2 form-inline">
-                        <div class="dropdown show">
-                            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <img src="public/img/us-language.png" alt="US Flag" height="20px"> En
-                            </a>
+<section id="navi">
+	<div class="container">
+		<div class="row">
+			<nav class="navbar navbar-default">
+				<div class="container-fluid">
+					<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 nav-list-item">
+						<a href="#">Home</a>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 nav-list-item">
+						<a href="#">Attraction</a>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 nav-list-item">
+						<a href="#">Tickets</a>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 nav-list-item">
+						<a href="#">Map</a>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</div>
+</section>
 
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                <a class="dropdown-item" href="#"><img src="public/img/us-language.png" alt="US Flag" height="20px"> En</a>
-                                <a class="dropdown-item" href="#"><img src="public/img/us-language.png" alt="US Flag" height="20px"> En</a>
-                                <a class="dropdown-item" href="#"><img src="public/img/us-language.png" alt="US Flag" height="20px"> En</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <br>
-            <div class="card-header header-menu">
-                <ul class="nav  nav-pills">
-                    <li class="nav-item col">
-                        <a class="nav-link active" href="#">Home</a>
-                    </li>
-                    <li class="nav-item col">
-                        <a class="nav-link" href="#">Attractions</a>
-                    </li>
-                    <li class="nav-item col">
-                        <a class="nav-link" href="#">Tickets</a>
-                    </li>
-                    <li class="nav-item col">
-                        <a class="nav-link" href="#">Map</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
+<section id="quick-buy">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-sm-8 col-md-6 col-lg-6 float-to-right">
+				<div class="col-xs-3 col-sm-3 col-md-2 col-lg-3">
+					<h5 class="floating-headling">Date</h5>
+				</div>
+				<div class="col-xs-9 col-sm-5 col-md-6 col-lg-6">
+					<input class="quick-buy-field" type="text" value="input date">
+				</div>
+				<div class="col-xs-12 col-sm-3 col-md-4 col-lg-3">
+					<button type="button" class="btn btn-light">Quick buy</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
 
-        <div class="container events pull-right" style="background-color:aqua">
-            <div class="row pull-right">
-                <div class="col-3"></div>
-                <div class="col-9 quick-buy pull-right">
-                    <div class="align-self-end">
-                        <div class="form-inline row">
-                            <div class="input-group col-4">
-                                <span class="input-group-btn">
-                                                          <button class="btn btn-secondary" type="button">Date:</button>
-                                                        </span>
-                                <input type="date" class="form-control" placeholder="Date" aria-label="Date">
-                            </div>
+<section id="content">
+	<div class="container">
+		<div class="row">
+			<!-- sidebar left -->
+			<div class="col-xs-12 col-sm-12 col-md-2 col-lg-2 sidebar-left">
+				<h2>Events</h2>
+				<div class="col-xs-4 col-sm-4 col-md-12 col-lg-12">
+					<img class="sidebar-left-icon center-block" src="img/header.jpg">
+				</div>
+				<div class="col-xs-4 col-sm-4 col-md-12 col-lg-12">
+					<img class="sidebar-left-icon center-block" src="img/header.jpg">
+				</div>
+				<div class="col-xs-4 col-sm-4 col-md-12 col-lg-12">
+					<img class="sidebar-left-icon center-block" src="img/header.jpg">
+				</div>
+			</div>
 
-                            <!-- adults -->
-                            <div class="number-form col-3 form-inline align-middle">
-                                <label class="col-1 col-form-label align-middle">Adults</label><br>
-                                <div class="row">
-                                    <button class="col-1 btn">-</button>
-                                    <input type="number" class="form-control col-4" placeholder="0">
-                                    <button class="col-1 btn">+</button>
-                                </div>
-                            </div>
-                            <!-- kids -->
-                            <div class="number-form col-3 form-inline">
-                                <label class="col-1 col-form-label">Kids:</label><br>
-                                <div class="row">
-                                    <button class="col-1 btn">-</button>
-                                    <input type="number" class="form-control col-4" placeholder="0">
-                                    <button class="col-1 btn">+</button>
-                                </div>
-                            </div>
-                            <button class="col-2 btn">Buy!</button>
-                        </div>
-                    </div>
+			<!-- main content -->
+			<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 attraction-list-box">
+
+				<!-- first attraction -->
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 attraction-item-box">
+					<div class="col-xs-12 col-sm-6 col-md-2 col-lg-2 attraction-item-img">
+						<img class="img-responsive atraction-img" src="img/attraction-img.jpg">
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+						<p class="h5">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						</p>
+					</div>
+					<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 social-icon-box">
+							<div class="col-xs-4 col-sm-4 col-md-12 col-lg-12">
+								<img class="social-icon" src="img/header.jpg">
+							</div>
+							<div class="col-xs-4 col-sm-4 col-md-12 col-lg-12">
+								<img class="social-icon" src="img/header.jpg">
+							</div>
+							<div class="col-xs-4 col-sm-4 col-md-12 col-lg-12">
+								<img class="social-icon" src="img/header.jpg">
+							</div>
+						</div>
+						<div class="col-lg-8">
+							<div class="attraction-rating-box">
+								<div class="rating brutal-attraction">
+									<h5 class="attraction-item-label text-center">90%</h5>
+								</div>
+							</div>
+							<p class="h6"><strong>Dominik Cisar:</strong> "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua."</p>
+						</div>
+					</div>
+				</div>
+			
+				<!-- second attraction -->
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 attraction-item-box">
+					<div class="col-xs-12 col-sm-6 col-md-2 col-lg-2 attraction-item-img">
+						<img class="img-responsive atraction-img" src="img/attraction-img.jpg">
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+						<p class="h5">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						</p>
+					</div>
+					<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 social-icon-box">
+							<div class="col-xs-4 col-sm-4 col-md-12 col-lg-12">
+								<img class="social-icon" src="img/header.jpg">
+							</div>
+							<div class="col-xs-4 col-sm-4 col-md-12 col-lg-12">
+								<img class="social-icon" src="img/header.jpg">
+							</div>
+							<div class="col-xs-4 col-sm-4 col-md-12 col-lg-12">
+								<img class="social-icon" src="img/header.jpg">
+							</div>
+						</div>
+						<div class="col-lg-8">
+							<div class="attraction-rating-box">
+								<div class="rating brutal-attraction">
+									<h5 class="attraction-item-label text-center">90%</h5>
+								</div>
+							</div>
+							<p class="h6"><strong>Dominik Cisar:</strong> "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua."</p>
+						</div>
+					</div>
+				</div>
+
+				<!-- third attraction -->
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 attraction-item-box">
+					<div class="col-xs-12 col-sm-6 col-md-2 col-lg-2 attraction-item-img">
+						<img class="img-responsive atraction-img" src="img/attraction-img.jpg">
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+						<p class="h5">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						</p>
+					</div>
+					<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 social-icon-box">
+							<div class="col-xs-4 col-sm-4 col-md-12 col-lg-12">
+								<img class="social-icon" src="img/header.jpg">
+							</div>
+							<div class="col-xs-4 col-sm-4 col-md-12 col-lg-12">
+								<img class="social-icon" src="img/header.jpg">
+							</div>
+							<div class="col-xs-4 col-sm-4 col-md-12 col-lg-12">
+								<img class="social-icon" src="img/header.jpg">
+							</div>
+						</div>
+						<div class="col-lg-8">
+							<div class="attraction-rating-box">
+								<div class="rating brutal-attraction">
+									<h5 class="attraction-item-label text-center">90%</h5>
+								</div>
+							</div>
+							<p class="h6"><strong>Dominik Cisar:</strong> "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua."</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- sidebar right -->
+			<div class="col-xs-12 col-sm-12 col-md-2 col-lg-2 sidebar-right">
+				<div class="col-xs-6 col-sm-3 col-md-12 col-lg-12 sidebar-item weather">
+					<img class="sidebar-icon center-block" src="img/header.jpg">
+					<h3 class="text-center">25 C</h3>
+					<p class="h5 text-center">sunny</p>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-12 col-lg-12 sidebar-item open-attractions">
+					<img class="sidebar-icon center-block" src="img/header.jpg">
+					<h3 class="text-center">12/15</h3>
+					<p class="h5 text-center">is working</p>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-12 col-lg-12 sidebar-item road-situation">
+					<img class="sidebar-icon center-block" src="img/header.jpg">
+					<p class="h5 text-center">empty roads</p>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-12 col-lg-12 sidebar-item parking-places">
+					<img class="sidebar-icon center-block" src="img/header.jpg">
+					<h3 class="text-center">60%</h3>
+					<p class="h5 text-center">is free</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
 
 
 
-                </div>
-            </div>
 
-        </div>
-
-
-
-
-
-
-        <div class="container infopanel" style="background-color:orange">
-            <h1>Nadpis</h1>
-        </div>
-
-        <div class="container footer" style="background-color:rgb(141, 38, 107)">
-            <h1>Nadpis</h1>
-        </div>
-
-        <div class="container main" style="background-color:rgb(0, 238, 52)">
-            <h1>Nadpis</h1>
-        </div>
-
-
-
-
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 </body>
-
 </html>
