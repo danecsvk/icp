@@ -186,11 +186,36 @@ a {
     border-color: inherit;
 }
 
+li {
+    color: white;
+    margin-left: 15%;
+    margin-top: 15px;
+}
+
+li:hover {
+    color: #73E9FF;
+}
+
+.copyright {
+    color: white;
+    margin-top: 35px;
+}
+
+.copyright-div {
+    text-align: center;
+}
+
 .sidebar-left-icon {
     width: 100%;
     margin: 0 auto;
     margin-bottom: 10px;
     border-radius: 15px;
+}
+
+.footer-div {
+    background-color: #005767;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
 }
 
 .sidebar-item {
