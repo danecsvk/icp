@@ -272,6 +272,9 @@ li:hover {
 
 /* media queries */
 
+
+
+
 @media(max-width: 545px) {
     .navbar {
         padding: 0px 0px 0px 0px;
@@ -291,6 +294,13 @@ li:hover {
         width: 33%;
         float: left;
     }
+    #search-h2-food{
+        display: none;
+    }
+    #search-h2-attractions{
+        display: none;
+    }
+
 }
 
 @media(max-width: 1200px) {
@@ -302,7 +312,18 @@ li:hover {
     }
 }
 
+h4 {
+    color:#005767;
+    margin: 0;
+    margin-top:5px;
+}
+
 h3 {
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
     margin: 0;
     padding: 0;
 }
@@ -344,4 +365,55 @@ a:active {
 .btn:hover {
     color: #005767;
     background-color: white;
+}
+
+
+.btn-search-set-section{
+background-color: #005767;
+color: white;
+border-radius: 7px;
+border : none;
+margin : 5px 0 5px 0;
+}
+
+.btn-search-set-section.focus,
+.btn-search-set-section:focus,
+.btn-search-set-section:hover {
+    border=none;
+}
+
+.attractions-button-svgs{
+    width : 75px;
+    height : auto;
+    margin: 0 auto;
+}
+
+.actual-filtering-box{
+    background-color:#06D8FF; 
+}
+
+#attractions-search-button-filter{
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
+.filtering-checkboxes{
+    padding: 5px;
+}
+
+#attractions-filtering-div{
+    border-radius:7px;
+    display: none;
+}
+
+#attractions-filtering-attractions-list{
+    display: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.attractions-list-images{
+width: 100%;
+margin-top: 20px;
+margin-bottom: 20px;
 }
