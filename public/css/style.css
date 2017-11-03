@@ -345,3 +345,56 @@ a:active {
     color: #005767;
     background-color: white;
 }
+
+.popup {
+    opacity: 0.9;
+    visibility: hidden;
+    color: #fff;
+    text-align: center;
+    border-radius: 15px;
+    padding: 3% 0;
+    position: absolute;
+    z-index: 2;
+    bottom: 30%;
+    left: 0%;
+    margin-left: 25%;
+    position: absolute;
+    display: block;
+    width: 50%;
+    background-color: black;
+    border: solid;
+    border-color: white;
+    text-align: center;
+}
+
+.popup-nadpis {
+    opacity: 1;
+    margin: 5%;
+    font-size: 280%;
+    font-weight: bold;
+}
+
+.popup-text {
+    opacity: 1;
+    margin: 2%;
+    font-size: 200%;
+}
+
+.popup-ok {
+    cursor: pointer;
+    border: solid;
+    border-color: white;
+    color: black;
+    background-color: #23FF00;
+    opacity: 1;
+    margin: 5%;
+    border-radius: 15px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    padding: 3%;
+    font-size: 200%;
+}
+
+.popup-ok:hover {
+    background-color: rgb(160, 255, 144);
+}
