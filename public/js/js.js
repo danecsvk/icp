@@ -43,7 +43,7 @@ $(".js-btn-kids-minus").click(function () {
     $(".js-kids-number").val(numberOfAdults);
 });
 
-<<<<<<< HEAD
+
 $(".js-btn-search-attractions-section").click(function() {
     document.getElementById("attractions-search-h2").style.display = "none";   
     var button = document.getElementById("attractions-search-btn-attractions");
@@ -75,7 +75,7 @@ $(".js-attractions-filter-button").click(function() {
         
     }
 });
-=======
+
 
 //popup click na tlačitko
 $(".popup-ok").click(function () {
@@ -94,4 +94,3 @@ $(document).mouseup(function (e) {
 $(".lang-switch").click(function () {
     showPopup("Zmena jazyka", "Toto tlačidlo by vo finálnej verzii preplo na inú jazykovú mutáciu stránky.", "Rozumiem");
 })
->>>>>>> 55ab73d282a4759057fad8b7a0641b6e5f254f23
