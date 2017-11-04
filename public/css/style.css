@@ -367,7 +367,6 @@ a:active {
     background-color: white;
 }
 
-<<<<<<< HEAD
 
 .btn-search-set-section{
 background-color: #005767;
@@ -381,7 +380,7 @@ margin : 5px 0 5px 0;
 .attractions-button-svgs{
     width : 75px;
     height : auto;
-    margin: 0 auto;
+    margin:  auto;
 }
 
 .actual-filtering-box{
