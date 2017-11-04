@@ -377,11 +377,6 @@ border : none;
 margin : 5px 0 5px 0;
 }
 
-.btn-search-set-section.focus,
-.btn-search-set-section:focus,
-.btn-search-set-section:hover {
-    border=none;
-}
 
 .attractions-button-svgs{
     width : 75px;
@@ -417,7 +412,7 @@ margin : 5px 0 5px 0;
 width: 100%;
 margin-top: 20px;
 margin-bottom: 20px;
-
+}
 .popup {
     opacity: 0.9;
     visibility: hidden;
@@ -469,5 +464,4 @@ margin-bottom: 20px;
 
 .popup-ok:hover {
     background-color: rgb(160, 255, 144);
->>>>>>> 55ab73d282a4759057fad8b7a0641b6e5f254f23
 }
