@@ -269,10 +269,9 @@ li:hover {
     padding: 15px;
 }
 
-
 /* media queries */
 
-@media(max-width: 545px) {
+@media(max-width: 545px) {	
     .navbar {
         padding: 0px 0px 0px 0px;
     }
@@ -297,6 +296,9 @@ li:hover {
     #search-h2-attractions {
         display: none;
     }
+	#video{
+		height: 150px;
+	}
 }
 
 @media(max-width: 1200px) {
@@ -605,4 +607,46 @@ a:active {
 
 .attr8:hover {
     transform: scale(2.0);
+}
+
+
+#vomiting_stred {
+    background-color: #73E9FF;
+    border-radius: 10px;
+}
+
+#video{
+	width:100%;
+	height:300px;
+}
+
+#vomiting_ul li{
+	font-size: 160%;
+	list-style-type: inherit;
+    color: #007186;
+	margin-left: 0px;
+}
+
+#vomiting_nadpis{
+	margin-left: 10%;
+	font-family: Cooper Black;
+}
+
+#nadpis_ratingu{
+	margin-left: 10%;
+}
+
+#hviezdicky{
+	margin-top: 5%;
+	margin-left: 10%;
+	font-size: 180%;
+}
+
+
+.checked {
+    color: gold;
+}
+
+.fa-star-half{
+	color: gold;
 }
