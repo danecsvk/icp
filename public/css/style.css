@@ -642,6 +642,21 @@ a:active {
 	font-size: 180%;
 }
 
+#hviezdicky_komentar{
+	margin-left: 10%;
+	font-size: 110%;
+}
+
+#komentar_vomiting {
+	text-align: justify;
+	margin-top: 2%;
+    background-color: #C8C8C8;
+    padding: 10px 0px 15px 0px;
+}
+
+#posunuty_nadpis{
+	margin-left: 20%;
+}
 
 .checked {
     color: gold;
