@@ -665,3 +665,18 @@ a:active {
 .fa-star-half{
 	color: gold;
 }
+
+.galeria_obrazok{
+	height: 40%;
+	width: 40%;
+}
+
+.galeria_obrazok_skryty{
+	height: 0px;
+	width: 0px;
+} 
+
+.panel-default>.panel-heading{
+	background-color: #d9d9d9;
+	font-size: 120%;
+}

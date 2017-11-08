@@ -94,3 +94,11 @@ $(document).mouseup(function (e) {
 $(".lang-switch").click(function () {
     showPopup("Zmena jazyka", "Toto tlačidlo by vo finálnej verzii preplo na inú jazykovú mutáciu stránky.", "Rozumiem");
 })
+
+// galeria
+$(document).ready(function() {
+	$(".fancybox").fancybox({
+		openEffect	: 'none',
+		closeEffect	: 'none'
+	});
+});
