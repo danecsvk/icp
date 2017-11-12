@@ -21,7 +21,7 @@ function showPopup(nadpis, text, textTlacidla) {
     $(".popup").css("visibility", "visible");
 }
 
-$(".js-btn-adults-plus").click(function () {
+$(".js-btn-adults-plus").click(function() {
     var numberOfAdults = $(".js-adults-number").val();
     numberOfAdults++;
     totalPrice += 9;
@@ -29,7 +29,7 @@ $(".js-btn-adults-plus").click(function () {
     $(".js-adults-number").val(numberOfAdults);
 });
 
-$(".js-btn-adults-minus").click(function () {
+$(".js-btn-adults-minus").click(function() {
     var numberOfAdults = $(".js-adults-number").val();
     if (numberOfAdults > 0) {
         numberOfAdults--;
@@ -39,7 +39,7 @@ $(".js-btn-adults-minus").click(function () {
     $(".js-adults-number").val(numberOfAdults);
 });
 
-$(".js-btn-kids-plus").click(function () {
+$(".js-btn-kids-plus").click(function() {
     var numberOfAdults = $(".js-kids-number").val();
     numberOfAdults++;
     totalPrice += 4.5;
@@ -47,7 +47,7 @@ $(".js-btn-kids-plus").click(function () {
     $(".js-kids-number").val(numberOfAdults);
 });
 
-$(".js-btn-kids-minus").click(function () {
+$(".js-btn-kids-minus").click(function() {
     var numberOfAdults = $(".js-kids-number").val();
     if (numberOfAdults > 0) {
         numberOfAdults--;
@@ -58,7 +58,7 @@ $(".js-btn-kids-minus").click(function () {
 });
 
 
-$(".js-btn-search-attractions-section").click(function () {
+$(".js-btn-search-attractions-section").click(function() {
     document.getElementById("attractions-search-h2").style.display = "none";
     var button = document.getElementById("attractions-search-btn-attractions");
     button.style.background = "#06D8FF";
@@ -69,15 +69,23 @@ $(".js-btn-search-attractions-section").click(function () {
     document.getElementById("attractions-filtering-attractions-list").style.display = "inline";
 });
 
-$(".js-attractions-filter-button").click(function () {
+$(".js-attractions-filter-button").click(function() {
     var x, i, j, k, counter = 0;
     var filters = [];
     var checkboxes = document.getElementsByClassName("filtering-checkbox");
+    var pocitadlo = 0;
     x = document.getElementsByClassName("filterDiv");
     for (i = 0; i < checkboxes.length; i++) {
         if (checkboxes[i].checked) {
             filters.push(checkboxes[i].className.split(' ')[1]);
+            pocitadlo++;
         }
+    }
+    if (pocitadlo == 0) {
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "inline";
+        }
+        return;
     }
     for (i = 0; i < x.length; i++) {
         for (k = 0; k < filters.length; k++) {
@@ -92,12 +100,12 @@ $(".js-attractions-filter-button").click(function () {
 
 
 //popup click na tlačitko
-$(".popup-ok").click(function () {
+$(".popup-ok").click(function() {
     $(".popup").css("visibility", "hidden");
 });
 
 // popup click mimo
-$(document).mouseup(function (e) {
+$(document).mouseup(function(e) {
     var container = $(".popup");
     if (!container.is(e.target) && container.has(e.target).length === 0) {
         $(".popup").css("visibility", "hidden");
@@ -105,12 +113,12 @@ $(document).mouseup(function (e) {
 });
 
 // zmena jazyka
-$(".lang-switch").click(function () {
+$(".lang-switch").click(function() {
     showPopup("Zmena jazyka", "Toto tlačidlo by vo finálnej verzii preplo na inú jazykovú mutáciu stránky.", "Rozumiem");
 })
 
 // galeria
-$(document).ready(function () {
+$(document).ready(function() {
     $(".fancybox").fancybox({
         openEffect: 'none',
         closeEffect: 'none'
@@ -118,13 +126,13 @@ $(document).ready(function () {
 });
 
 // tickets
-$(".js-btn-adults-plus-tickets").click(function () {
+$(".js-btn-adults-plus-tickets").click(function() {
     tcktsNumberOfAdults++;
     $(".js-adults-number-tickets").val(tcktsNumberOfAdults);
     updateTotalPrice();
 });
 
-$(".js-btn-adults-minus-tickets").click(function () {
+$(".js-btn-adults-minus-tickets").click(function() {
     tcktsNumberOfAdults--;
     if (tcktsNumberOfAdults < 0) {
         tcktsNumberOfAdults = 0;
@@ -133,13 +141,13 @@ $(".js-btn-adults-minus-tickets").click(function () {
     updateTotalPrice();
 });
 
-$(".js-btn-kids-plus-tickets").click(function () {
+$(".js-btn-kids-plus-tickets").click(function() {
     tcktsNumberOfKids++;
     $(".js-kids-number-tickets").val(tcktsNumberOfKids);
     updateTotalPrice();
 });
 
-$(".js-btn-kids-minus-tickets").click(function () {
+$(".js-btn-kids-minus-tickets").click(function() {
     tcktsNumberOfKids--;
     if (tcktsNumberOfKids < 0) {
         tcktsNumberOfKids = 0;
@@ -148,13 +156,13 @@ $(".js-btn-kids-minus-tickets").click(function () {
     updateTotalPrice();
 });
 
-$(".js-btn-adults-plus-lunch").click(function () {
+$(".js-btn-adults-plus-lunch").click(function() {
     lunchNumberOfAdults++;
     $(".js-adults-number-lunch").val(lunchNumberOfAdults);
     updateTotalPrice();
 });
 
-$(".js-btn-adults-minus-lunch").click(function () {
+$(".js-btn-adults-minus-lunch").click(function() {
     lunchNumberOfAdults--;
     if (lunchNumberOfAdults < 0) {
         lunchNumberOfAdults = 0;
@@ -163,13 +171,13 @@ $(".js-btn-adults-minus-lunch").click(function () {
     updateTotalPrice();
 });
 
-$(".js-btn-kids-plus-lunch").click(function () {
+$(".js-btn-kids-plus-lunch").click(function() {
     lunchNumberOfKids++;
     $(".js-kids-number-lunch").val(lunchNumberOfKids);
     updateTotalPrice();
 });
 
-$(".js-btn-kids-minus-lunch").click(function () {
+$(".js-btn-kids-minus-lunch").click(function() {
     lunchNumberOfKids--;
     if (lunchNumberOfKids < 0) {
         lunchNumberOfKids = 0;
@@ -178,13 +186,13 @@ $(".js-btn-kids-minus-lunch").click(function () {
     updateTotalPrice();
 });
 
-$(".js-btn-plus-photos").click(function () {
+$(".js-btn-plus-photos").click(function() {
     photosNumberOf++;
     $(".js-number-photos").val(photosNumberOf);
     updateTotalPrice();
 });
 
-$(".js-btn-minus-photos").click(function () {
+$(".js-btn-minus-photos").click(function() {
     photosNumberOf--;
     if (photosNumberOf < 0) {
         photosNumberOf = 0;
@@ -193,13 +201,13 @@ $(".js-btn-minus-photos").click(function () {
     updateTotalPrice();
 });
 
-$(".js-btn-adults-plus-gift").click(function () {
+$(".js-btn-adults-plus-gift").click(function() {
     giftNumberOfAdults++;
     $(".js-adults-number-gift").val(giftNumberOfAdults);
     updateTotalPrice();
 });
 
-$(".js-btn-adults-minus-gift").click(function () {
+$(".js-btn-adults-minus-gift").click(function() {
     giftNumberOfAdults--;
     if (giftNumberOfAdults < 0) {
         giftNumberOfAdults = 0;
@@ -208,13 +216,13 @@ $(".js-btn-adults-minus-gift").click(function () {
     updateTotalPrice();
 });
 
-$(".js-btn-kids-plus-gift").click(function () {
+$(".js-btn-kids-plus-gift").click(function() {
     giftNumberOfKids++;
     $(".js-kids-number-gift").val(giftNumberOfKids);
     updateTotalPrice();
 });
 
-$(".js-btn-kids-minus-gift").click(function () {
+$(".js-btn-kids-minus-gift").click(function() {
     giftNumberOfKids--;
     if (giftNumberOfKids < 0) {
         giftNumberOfKids = 0;
@@ -223,13 +231,13 @@ $(".js-btn-kids-minus-gift").click(function () {
     updateTotalPrice();
 });
 
-$(".js-btn-plus-guide").click(function () {
+$(".js-btn-plus-guide").click(function() {
     guideNumberOf++;
     $(".js-number-guide").val(guideNumberOf);
     updateTotalPrice();
 });
 
-$(".js-btn-minus-guide").click(function () {
+$(".js-btn-minus-guide").click(function() {
     guideNumberOf--;
     if (guideNumberOf < 0) {
         guideNumberOf = 0;
@@ -238,7 +246,7 @@ $(".js-btn-minus-guide").click(function () {
     updateTotalPrice();
 });
 
-$(".voucher-apply").click(function () {
+$(".voucher-apply").click(function() {
     if (vouchers.indexOf($(".voucher-input").val()) > -1) {
         $(".total-tickets-price").html("Price: " + (updateTotalPrice() / 2) + "€");
         showPopup("Voucher applied", "Congratulations! You activated 50% voucher.", "Accept");
@@ -260,18 +268,18 @@ function updateTotalPrice() {
     return priceTotal;
 }
 
-$(".proceed-button").click(function () {
+$(".proceed-button").click(function() {
     showPopup("Platba", "Toto tlačidlo by Vás prenieslo na stránku platobnej brány.", "Rozumiem");
 });
 
-$(".tickets-start-date").change(function () {
+$(".tickets-start-date").change(function() {
     startDate = true;
     if (endDate == true) {
         $(".date-available").html("This date is available.");
     }
 });
 
-$(".tickets-end-date").change(function () {
+$(".tickets-end-date").change(function() {
     endDate = true;
     if (startDate == true) {
         $(".date-available").html("This date is available.");
@@ -279,24 +287,37 @@ $(".tickets-end-date").change(function () {
 });
 
 // Výber atrakcie
-	$(".attr1").click(function () {
-		showPopup("Porucha atrakcie", "Táto atrakcia momentálne nie je k dispozícii. <br><br> Odhadovaná doba odstávky je približne do 16:30\n <br> <br>  <br>Ďakujeme za pochopenie ", "Rozumiem");
-	});
-	$(".attr2").click(function () {
-		showPopup("Výber atrakcie na mape", "Táto akcia by vás v plnej verzii stránky presmerovala na konkrétnu atrakciu prosím vyberte pre testovacie účely atrakciu v strede obrazovky s menom \"Vomiting suicide\" ", "Rozumiem");
-	});
-	$(".attr3").click(function () {
-		showPopup("Výber atrakcie na mape", "Táto akcia by vás v plnej verzii stránky presmerovala na konkrétnu atrakciu prosím vyberte pre testovacie účely atrakciu v strede obrazovky s menom \"Vomiting suicide\" ", "Rozumiem");
-	});
-	$(".attr4").click(function () {
-		showPopup("Výber atrakcie na mape", "Táto akcia by vás v plnej verzii stránky presmerovala na konkrétnu atrakciu prosím vyberte pre testovacie účely atrakciu v strede obrazovky s menom \"Vomiting suicide\" ", "Rozumiem");
-	});
-	$(".attr6").click(function () {
-		showPopup("Výber atrakcie na mape", "Táto akcia by vás v plnej verzii stránky presmerovala na konkrétnu atrakciu prosím vyberte pre testovacie účely atrakciu v strede obrazovky s menom \"Vomiting suicide\" ", "Rozumiem");
-	});
-	$(".attr7").click(function () {
-		showPopup("Výber atrakcie na mape", "Táto akcia by vás v plnej verzii stránky presmerovala na konkrétnu atrakciu prosím vyberte pre testovacie účely atrakciu v strede obrazovky s menom \"Vomiting suicide\" ", "Rozumiem");
-	});
-	$(".attr8").click(function () {
-		showPopup("Výber atrakcie na mape", "Táto akcia by vás v plnej verzii stránky presmerovala na konkrétnu atrakciu prosím vyberte pre testovacie účely atrakciu v strede obrazovky s menom \"Vomiting suicide\" ", "Rozumiem");
-	});
+$(".attr1").click(function() {
+    showPopup("Porucha atrakcie", "Táto atrakcia momentálne nie je k dispozícii. <br><br> Odhadovaná doba odstávky je približne do 16:30\n <br> <br>  <br>Ďakujeme za pochopenie ", "Rozumiem");
+});
+$(".attr2").click(function() {
+    showPopup("Výber atrakcie na mape", "Táto akcia by vás v plnej verzii stránky presmerovala na konkrétnu atrakciu prosím vyberte pre testovacie účely atrakciu v strede obrazovky s menom \"Vomiting suicide\" ", "Rozumiem");
+});
+$(".attr3").click(function() {
+    showPopup("Výber atrakcie na mape", "Táto akcia by vás v plnej verzii stránky presmerovala na konkrétnu atrakciu prosím vyberte pre testovacie účely atrakciu v strede obrazovky s menom \"Vomiting suicide\" ", "Rozumiem");
+});
+$(".attr4").click(function() {
+    showPopup("Výber atrakcie na mape", "Táto akcia by vás v plnej verzii stránky presmerovala na konkrétnu atrakciu prosím vyberte pre testovacie účely atrakciu v strede obrazovky s menom \"Vomiting suicide\" ", "Rozumiem");
+});
+$(".attr6").click(function() {
+    showPopup("Výber atrakcie na mape", "Táto akcia by vás v plnej verzii stránky presmerovala na konkrétnu atrakciu prosím vyberte pre testovacie účely atrakciu v strede obrazovky s menom \"Vomiting suicide\" ", "Rozumiem");
+});
+$(".attr7").click(function() {
+    showPopup("Výber atrakcie na mape", "Táto akcia by vás v plnej verzii stránky presmerovala na konkrétnu atrakciu prosím vyberte pre testovacie účely atrakciu v strede obrazovky s menom \"Vomiting suicide\" ", "Rozumiem");
+});
+$(".attr8").click(function() {
+    showPopup("Výber atrakcie na mape", "Táto akcia by vás v plnej verzii stránky presmerovala na konkrétnu atrakciu prosím vyberte pre testovacie účely atrakciu v strede obrazovky s menom \"Vomiting suicide\" ", "Rozumiem");
+});
+
+$(".fltr").click(function() {
+    var classes = $(this).attr("class").split(/\s+/);
+    for (var i = 0; i < classes.length; i++) {
+        if (classes[i] != "fltr") {
+            if (document.getElementById(classes[i]).checked) {
+                $("#" + classes[i]).prop('checked', false);
+            } else {
+                $("#" + classes[i]).prop('checked', true);
+            }
+        }
+    }
+});
