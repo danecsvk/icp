@@ -309,6 +309,14 @@ $(".attr8").click(function() {
     showPopup("Výber atrakcie na mape", "Táto akcia by vás v plnej verzii stránky presmerovala na konkrétnu atrakciu prosím vyberte pre testovacie účely atrakciu v strede obrazovky s menom \"Vomiting suicide\" ", "Rozumiem");
 });
 
+$(".filtering-checkbox").click(function(e) {
+    if (document.getElementById($(this).attr("id")).checked) {
+        $("#" + $(this).attr("id")).prop('checked', false);
+    } else {
+        $("#" + $(this).attr("id")).prop('checked', true);
+    }
+})
+
 $(".fltr").click(function() {
     var classes = $(this).attr("class").split(/\s+/);
     for (var i = 0; i < classes.length; i++) {
