@@ -277,3 +277,26 @@ $(".tickets-end-date").change(function () {
         $(".date-available").html("This date is available.");
     }
 });
+
+// Výber atrakcie
+	$(".attr1").click(function () {
+		showPopup("Výber atrakcie na mape", "Táto akcia by vás v plnej verzii stránky presmerovala na konkrétnu atrakciu prosím vyberte pre testovacie účely atrakciu v strede obrazovky s menom \"Vomiting suicide\" ", "Rozumiem");
+	});
+	$(".attr2").click(function () {
+		showPopup("Výber atrakcie na mape", "Táto akcia by vás v plnej verzii stránky presmerovala na konkrétnu atrakciu prosím vyberte pre testovacie účely atrakciu v strede obrazovky s menom \"Vomiting suicide\" ", "Rozumiem");
+	});
+	$(".attr3").click(function () {
+		showPopup("Výber atrakcie na mape", "Táto akcia by vás v plnej verzii stránky presmerovala na konkrétnu atrakciu prosím vyberte pre testovacie účely atrakciu v strede obrazovky s menom \"Vomiting suicide\" ", "Rozumiem");
+	});
+	$(".attr4").click(function () {
+		showPopup("Výber atrakcie na mape", "Táto akcia by vás v plnej verzii stránky presmerovala na konkrétnu atrakciu prosím vyberte pre testovacie účely atrakciu v strede obrazovky s menom \"Vomiting suicide\" ", "Rozumiem");
+	});
+	$(".attr6").click(function () {
+		showPopup("Výber atrakcie na mape", "Táto akcia by vás v plnej verzii stránky presmerovala na konkrétnu atrakciu prosím vyberte pre testovacie účely atrakciu v strede obrazovky s menom \"Vomiting suicide\" ", "Rozumiem");
+	});
+	$(".attr7").click(function () {
+		showPopup("Výber atrakcie na mape", "Táto akcia by vás v plnej verzii stránky presmerovala na konkrétnu atrakciu prosím vyberte pre testovacie účely atrakciu v strede obrazovky s menom \"Vomiting suicide\" ", "Rozumiem");
+	});
+	$(".attr8").click(function () {
+		showPopup("Výber atrakcie na mape", "Táto akcia by vás v plnej verzii stránky presmerovala na konkrétnu atrakciu prosím vyberte pre testovacie účely atrakciu v strede obrazovky s menom \"Vomiting suicide\" ", "Rozumiem");
+	});

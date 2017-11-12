@@ -482,15 +482,14 @@ a:active {
 }
 
 .attr1 {
-    transition: all .2s ease-in-out;
+      transition: all .2s ease-in-out;
     position: absolute;
     border: 3px solid transparent;
     border-radius: 10px;
-    border-color: black;
-    width: 10%;
+    border-color: blue;
+    width: 100%;
     height: auto;
-    top: 10%;
-    left: 50%;
+
 }
 
 .attr2 {
@@ -498,85 +497,156 @@ a:active {
     position: absolute;
     border: 3px solid transparent;
     border-radius: 10px;
-    border-color: black;
-    width: 10%;
+    border-color: blue;
+    width: 100%;
     height: auto;
-    top: 20%;
-    left: 30%;
+ 
 }
 
 .attr3 {
-    transition: all .2s ease-in-out;
+      transition: all .2s ease-in-out;
     position: absolute;
     border: 3px solid transparent;
     border-radius: 10px;
-    border-color: black;
-    width: 10%;
+    border-color: blue;
+    width: 100%;
     height: auto;
-    top: 80%;
-    left: 50%;
+
 }
 
 .attr4 {
-    transition: all .2s ease-in-out;
+       transition: all .2s ease-in-out;
     position: absolute;
     border: 3px solid transparent;
     border-radius: 10px;
-    border-color: black;
-    width: 10%;
+    border-color: blue;
+    width: 100%;
     height: auto;
-    top: 50%;
-    left: 20%;
-}
 
+}
 .attr5 {
     transition: all .2s ease-in-out;
     position: absolute;
     border: 3px solid transparent;
     border-radius: 10px;
-    border-color: black;
+    border-color: blue;
+    width: 100%;
+    height: auto;
+
+}
+
+.attr6 {
+      transition: all .2s ease-in-out;
+    position: absolute;
+    border: 3px solid transparent;
+    border-radius: 10px;
+    border-color: blue;
+    width: 100%;
+    height: auto;
+
+}
+
+.attr7 {
+       transition: all .2s ease-in-out;
+    position: absolute;
+    border: 3px solid transparent;
+    border-radius: 10px;
+    border-color: blue;
+    width: 100%;
+    height: auto;
+
+}
+
+.attr8 {
+       transition: all .2s ease-in-out;
+    position: absolute;
+    border: 3px solid transparent;
+    border-radius: 10px;
+    border-color: blue;
+    width: 100%;
+    height: auto;
+
+}
+.divko1 {
+    transition: all .2s ease-in-out;
+    position: absolute;
+    border-radius: 10px;
+    border-color: blue;
     width: 10%;
     height: auto;
     top: 20%;
     left: 65%;
 }
-
-.attr6 {
+.divko2 {
     transition: all .2s ease-in-out;
     position: absolute;
-    border: 3px solid transparent;
     border-radius: 10px;
-    border-color: black;
-    width: 10%;
-    height: auto;
-    top: 70%;
-    left: 70%;
-}
-
-.attr7 {
-    transition: all .2s ease-in-out;
-    position: absolute;
-    border: 3px solid transparent;
-    border-radius: 10px;
-    border-color: black;
+    border-color: blue;
     width: 10%;
     height: auto;
     top: 10%;
-    left: 15%;
+    left: 45%;
 }
-
-.attr8 {
+.divko3 {
     transition: all .2s ease-in-out;
     position: absolute;
-    border: 3px solid transparent;
     border-radius: 10px;
-    border-color: black;
+    border-color: blue;
+    width: 10%;
+    height: auto;
+    top: 50%;
+    left: 65%;
+}
+.divko4 {
+    transition: all .2s ease-in-out;
+    position: absolute;
+    border-radius: 10px;
+    border-color: blue;
+    width: 10%;
+    height: auto;
+    top: 70%;
+    left: 35%;
+}
+.divko5 {
+    transition: all .2s ease-in-out;
+    position: absolute;
+    border-radius: 10px;
+    border-color: blue;
+    width: 10%;
+    height: auto;
+    top: 35%;
+    left: 50%;
+}
+.divko6 {
+    transition: all .2s ease-in-out;
+    position: absolute;
+    border-radius: 10px;
+    border-color: blue;
+    width: 10%;
+    height: auto;
+    top: 10%;
+    left: 10%;
+}
+.divko7 {
+    transition: all .2s ease-in-out;
+    position: absolute;
+    border-radius: 10px;
+    border-color: blue;
+    width: 10%;
+    height: auto;
+    top: 10%;
+    left: 80%;
+}
+.divko8 {
+    transition: all .2s ease-in-out;
+    position: absolute;
+    border-radius: 10px;
+    border-color: blue;
     width: 10%;
     height: auto;
     top: 40%;
-    left: 55%;
+    left: 25%;
 }
-
 .attr1:hover {
     transform: scale(2.0);
 }
@@ -607,6 +677,19 @@ a:active {
 
 .attr8:hover {
     transform: scale(2.0);
+}
+
+
+a[title]:hover:after {
+     content: attr(title);
+	 font-family: Cooper Black;
+     padding: 4px 8px;
+     position: relative;
+     left: 0%;
+     top: 0%;
+     white-space: nowrap;
+     z-index: 20px;
+     background:#73E9FF;
 }
 
 .input-text2 {
