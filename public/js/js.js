@@ -280,7 +280,7 @@ $(".tickets-end-date").change(function () {
 
 // Výber atrakcie
 	$(".attr1").click(function () {
-		showPopup("Výber atrakcie na mape", "Táto akcia by vás v plnej verzii stránky presmerovala na konkrétnu atrakciu prosím vyberte pre testovacie účely atrakciu v strede obrazovky s menom \"Vomiting suicide\" ", "Rozumiem");
+		showPopup("Porucha atrakcie", "Táto atrakcia momentálne nie je k dispozícii. <br><br> Odhadovaná doba odstávky je približne do 16:30\n <br> <br>  <br>Ďakujeme za pochopenie ", "Rozumiem");
 	});
 	$(".attr2").click(function () {
 		showPopup("Výber atrakcie na mape", "Táto akcia by vás v plnej verzii stránky presmerovala na konkrétnu atrakciu prosím vyberte pre testovacie účely atrakciu v strede obrazovky s menom \"Vomiting suicide\" ", "Rozumiem");
