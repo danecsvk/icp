@@ -329,3 +329,7 @@ $(".fltr").click(function() {
         }
     }
 });
+
+$(".quick-buy-btn").click(function() {
+    showPopup("Platba", "Toto tlačidlo by Vás presmerovalo na platobnú bránu", "Rozumiem")
+})
