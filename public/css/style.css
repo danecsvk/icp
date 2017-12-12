@@ -300,6 +300,9 @@ li:hover {
     #video {
         height: 150px;
     }
+    #attractions-search-button-filter{
+        margin-top: 0px;
+    }
 }
 
 @media(max-width: 1200px) {
@@ -308,6 +311,12 @@ li:hover {
     }
     .social-icon-box {
         display: none;
+    }
+}
+
+@media(min-width: 1000px) {
+    #attractions-search-button-filter{
+        margin-top: 100px;
     }
 }
 
@@ -325,6 +334,10 @@ h3 {
 h2 {
     margin: 0;
     padding: 0;
+}
+
+.newshit{
+    color: #005767;
 }
 
 img {
@@ -385,7 +398,7 @@ a:active {
 }
 
 #attractions-search-button-filter {
-    margin-top: 60px;
+    /*margin-top: 0px;*/
     margin-bottom: 20px;
 }
 
@@ -820,4 +833,9 @@ hr {
 .nadpisMapy{
 	font-family: Cooper Black;
 	text-align:center;
+}
+
+.fltr{
+    font-size: 22px;
+    font-weight: bold;
 }
